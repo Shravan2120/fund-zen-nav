@@ -78,14 +78,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "MyFundSIP — Start Your SIP Journey in Mutual Funds" },
+      {
+        name: "description",
+        content:
+          "Plan your wealth with SIPs in top-rated Indian mutual funds. Free SIP calculator and fund explorer.",
+      },
+      { property: "og:title", content: "MyFundSIP — Start Your SIP Journey in Mutual Funds" },
+      {
+        property: "og:description",
+        content:
+          "Plan your wealth with SIPs in top-rated Indian mutual funds. Free SIP calculator and fund explorer.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {

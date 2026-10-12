@@ -167,7 +167,7 @@ function Hero() {
 function HeroCard() {
   const { fv } = sipFutureValue(10000, 12, 15);
   const series = sipYearlySeries(10000, 12, 15);
-  const max = series[series.length - 1].value;
+  const max = series[series.length - 1]!.value;
   const points = series
     .map((p, i) => `${(i / (series.length - 1)) * 100},${100 - (p.value / max) * 90}`)
     .join(" ");
@@ -402,7 +402,7 @@ function CalculatorSection() {
   );
   const series = useMemo(() => sipYearlySeries(monthly, rate, years), [monthly, rate, years]);
 
-  const maxVal = series[series.length - 1].value;
+  const maxVal = series[series.length - 1]!.value;
   const valuePoints = series
     .map((p, i) => `${(i / (series.length - 1)) * 100},${100 - (p.value / maxVal) * 88 - 4}`)
     .join(" ");
